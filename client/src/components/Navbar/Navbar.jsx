@@ -21,44 +21,44 @@ const Navbar = ({ token }) => {
       <div className={showMenu ? "nav-items mobile-menu-link" : "nav-items"}>
         <ul>
           <li>
-            <a
+            <Link
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              to="/about"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              to="/ourwork"
             >
               Our Work
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              to="/contact"
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

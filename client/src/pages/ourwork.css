@@ -1,0 +1,151 @@
+.ourwork-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 2s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.ourwork-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .gov-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-left span {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.header-right span {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.ourwork-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.details-container {
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.details-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.details-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.orphanage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.orphanage-box {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.orphanage-box:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+.details-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.details-container ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.ourwork-footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.ourwork-footer p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.flowchart-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.flowchart-step {
+  padding: 10px 20px;
+  border: 2px solid #ad0101;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1.2em;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.flowchart-step:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ad0101;
+}
+
+.flowchart-arrow {
+  font-size: 2em;
+  color: #ad0101;;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

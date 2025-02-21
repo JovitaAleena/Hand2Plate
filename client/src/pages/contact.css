@@ -1,0 +1,61 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 2s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.contact-footer {
+  text-align: center;
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+.contact-footer p {
+  margin: 5px 0;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
