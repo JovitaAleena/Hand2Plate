@@ -13,9 +13,10 @@ import Layout from "./dashboard/Layout";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./dashboard/Profile";
 import Food from "./dashboard/Food";
-import About from "./pages/about"; // Import the About component
-import Contact from "./pages/contact"; // Import the Contact component
-import OurWork from "./pages/ourwork"; // Import the OurWork component
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import OurWork from "./pages/ourwork";
+import Track from "./dashboard/Track";
 
 function App() {
   const token = localStorage.getItem("token");
@@ -34,11 +35,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/donation" element={<FoodDonation />} />
-        <Route path="/about" element={<About />} /> {/* Add the About route */}
-        <Route path="/contact" element={<Contact />} /> {/* Add the Contact route */}
-        <Route path="/ourwork" element={<OurWork />} /> {/* Add the OurWork route */}
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/ourwork" element={<OurWork />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/track" element={<Track />} /> {/* Add the Track route */}
 
         {token ? (
           <Route element={<Layout />}>

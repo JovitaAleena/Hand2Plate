@@ -1,11 +1,20 @@
 import React from "react";
 import { FaCalendarAlt, FaCartArrowDown, FaHome } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "./FoodCard.css";
 
 const FoodCard = ({ name, quantity, date, address, tag }) => {
+  const navigate = useNavigate();
+
+  const handleCheckStatus = () => {
+    const hubCoordinates = [51.505, -0.09]; // Example coordinates for the hub
+    const destinationCoordinates = [51.515, -0.1]; // Example coordinates for the destination
+    navigate('/track', { state: { hubCoordinates, destinationCoordinates } });
+  };
+
   return (
     <div>
-      <div class="card">
+      <div className="card">
         <p
           style={{
             position: "absolute",
@@ -26,7 +35,7 @@ const FoodCard = ({ name, quantity, date, address, tag }) => {
           src={`https://source.unsplash.com/random/?${name}`}
           alt="Card Image"
         />
-        <div class="card-content">
+        <div className="card-content">
           <h2 className="food-title">{name}</h2>
           <div className="food-details">
             <ul className="icons">
@@ -50,7 +59,7 @@ const FoodCard = ({ name, quantity, date, address, tag }) => {
               </li>
             </ul>
           </div>
-          <button className="food-btn">Check Status</button>
+          <button className="food-btn" onClick={handleCheckStatus}>Check Status</button>
         </div>
       </div>
     </div>

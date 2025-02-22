@@ -13,7 +13,7 @@ const Profile = () => {
   const userData = localStorage.getItem("user");
   const user = JSON.parse(userData);
   const [editing, setEditing] = useState(false);
-  const [name, setName] = useState(user.name);
+  const [name, setName] = useState(user.name || "");
   const [number, setNumber] = useState(user.number);
   const [email, setEmail] = useState(user.email);
 
