@@ -1,7 +1,4 @@
 # Food Donation
-
-[![Food Donation](https://img.youtube.com/vi/uiFmoIfHRp8/0.jpg)](https://www.youtube.com/watch?v=uiFmoIfHRp8)
-
 Food Donation is a web application aimed at connecting individuals and organizations willing to donate excess food with those in need. It provides a platform to reduce food wastage and contribute to the well-being of communities.
 
 ## Features
@@ -17,44 +14,39 @@ Food Donation is a web application aimed at connecting individuals and organizat
 -Feedback and ratings: Users can provide feedback and ratings to ensure transparency and accountability.
 
 ## Technologies Used
-
 - Frontend: HTML, CSS, JavaScript, React.js
 - Backend: Node.js, Express.js, MongoDB
 - Authentication: JSON Web Tokens (JWT)
-- Communication: Socket.IO
-
-
 ## Installation
-
-1. Clone the repository: `git clone https://github.com/devprashantt/food-donation.git`
+1. Clone the repository:https://github.com/JovitaAleena/hand2plate.git
 
 2. Frontend Installation:
 - Navigate to the project frontend directory:
-  ```
+
   cd food-donation/client
-  ```
+
 - Install dependencies:
-  ```
+  
   npm install
-  ```
+  
 - Start the development server:
-  ```
+  
   npm run dev
-  ```
+  
 
 3. Backend Installation:
 - Navigate to the project backend directory:
-  ```
+  
   cd food-donation/server
-  ```
+  
 - Install dependencies:
-  ```
+  
   npm install
-  ```
+  
 - Start the development server:
-  ```
+  
   npm start
-  ```
+  
 
 Make sure you have Node.js and npm (Node Package Manager) installed on your machine before running these commands.
 
@@ -68,4 +60,3 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your mach
 - The backend server will be running at `http://localhost:3000`.
 - The frontend application will communicate with the backend server for data exchange.
 
-hello
