@@ -14,7 +14,7 @@ const OurWork = () => {
     <div className="ourwork-container">
       <header className="ourwork-header">
         <div className="header-left">
-          <img src="path/to/government-logo.png" alt="Government Logo" className="gov-logo" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TamilNadu_Logo.svg" alt="Government Logo" className="gov-logo" />
           <span>GOVERNMENT OF TAMILNADU</span>
         </div>
         <div className="header-right">
@@ -30,10 +30,12 @@ const OurWork = () => {
             {orphanages.map((orphanage, index) => (
               <div
                 key={index}
-                className="orphanage-box"
+                className="orphanage-card"
                 onClick={() => window.open(orphanage.link, '_blank')}
               >
-                {orphanage.name}
+                <div className="orphanage-card-content">
+                  <h3>{orphanage.name}</h3>
+                </div>
               </div>
             ))}
           </div>

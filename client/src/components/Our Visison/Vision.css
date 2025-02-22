@@ -1,54 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
 
 .vision {
-    display: flex;
-    height: 60vh;
-    padding: 30px 60px;
-    margin: 40px 30px;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Poppins','sans-serif';
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  padding: 30px 60px;
+  margin: 40px 30px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Poppins', 'sans-serif';
+  animation: fadeIn 2s ease-in-out;
 }
 
 .vision-text {
-    width: 50%;
-    height: 55vh;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideInLeft 1.5s ease-in-out;
 }
 
-
-
 .vision-heading {
-    color: black;
-    font-size: 1rem;
-    margin-bottom: 5px;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .vision-subheading {
-    font-size: 1.5rem;
-    font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .vision-img {
-    background-image: url("../../assets/pic-1.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 45%;
-    height: 55vh;
+  background-image: url("../../assets/pic-1.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  height: 55vh;
+  border-radius: 10px;
+  animation: slideInRight 1.5s ease-in-out;
+}
 
+.vision-text:hover, .vision-img:hover {
+  animation: hoverEffect 0.5s ease-in-out forwards;
+}
+
+.vision-text:active, .vision-img:active {
+  animation: pressEffect 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pressEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes hoverEffect {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 998px) {
-    .aboutus {
-        flex-direction: column;
-    }
+  .vision {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .vision-text, .vision-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
-
 @media (max-width: 520px) {
-    .aboutus {
-        flex-direction: column;
-    }
+  .vision {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .vision-heading {
+    font-size: 1.2rem;
+  }
+
+  .vision-subheading {
+    font-size: 1rem;
+  }
 }

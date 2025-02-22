@@ -1,40 +1,32 @@
-import React from "react";
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="heading-footer">
-        ShareThe<span>MEAL</span>
+    <footer className="footer">
+      <div className="footer-section">
+        <h2 className="heading-footer">Hand2Plate <span>Food Donation</span></h2>
+        <p className="footer-p">Reducing food waste and helping those in need.</p>
       </div>
-      <div className="div1">
-        <h4 className="footer-h4">Who We Are</h4>
-        <p className="footer-p">About Us</p>
-        <p className="footer-p">Our Work</p>
-        <p className="footer-p">Our Vision</p>
-        <p className="footer-p">Contact</p>
+      <div className="footer-section">
+        <h4 className="footer-h4">Contact Us</h4>
+        <p className="footer-p">Email: hand2plate@gmail.com</p>
+        <p className="footer-p">Phone: 9876543218</p>
       </div>
-      <div className="div2">
-        <h4 className="footer-h4">Get Involved</h4>
-        <p className="footer-p">Request For Food</p>
-        <p className="footer-p">Partner with Us</p>
-      </div>
-      <div className="div3">
-        <h4 className='footer-h4 className="footer-p"'>Socials</h4>
+      <div className="footer-section">
+        <h4 className="footer-h4">Follow Us</h4>
         <div className="footer-icons">
-          <p className="footer-p">
-            <FaInstagram size={40} />
-          </p>
-          <p className="footer-p">
-            <FaTwitter size={40} />
-          </p>
-          <p className="footer-p">
-            <FaFacebook size={40} />
-          </p>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
       </div>
-    </div>
+      <div className="footer-bottom">
+        <p>&copy; 2025 Hand2Plate. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 

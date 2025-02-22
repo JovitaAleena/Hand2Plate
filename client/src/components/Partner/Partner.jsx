@@ -6,17 +6,17 @@ const Partner = () => {
   const data = [
     {
       id: 1,
-      name: "Robin Hood Army",
-      img: "https://upload.wikimedia.org/wikipedia/commons/f/f3/The_Logo_of_the_Robin_Hood_Army.jpg",
+      name: "The Red Cafe",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOknLWygwp1R6G05O4KKu8d8YpBExS-0HuVA&s",
       description:
-        "The Robin Hood Army is a zero-funds volunteer organization that works to get surplus food from restaurants and communities to serve the less fortunate.The lesser fortunate sections of society we serve include homeless families and orphans",
+        "The Red Cafe is a organisation that provides the surplus food to communities to serve the less fortunate.The lesser fortunate sections of society we serve include homeless families and orphans",
     },
     {
       id: 2,
-      name: "Uday Foundation",
-      img: "https://yt3.googleusercontent.com/ytc/AL5GRJXx6H2mK-ZfXG4MmVALh1brpbVjw_-o6VGfeNIxOA=s900-c-k-c0x00ffffff-no-rj",
+      name: "A2B",
+      img: "https://www.a2bnewjersey.com/wp-content/uploads/2022/08/A2B-Logo-PDF-1.png",
       description:
-        "Uday Foundation is a reputed NGO in Delhi, committed to making a positive impact in the lives of underprivileged families in India. We offer a range of programs, including food donation, old clothes donation and unused medicine donation. ",
+        "A2B is a reputed Restaurant, committed to making a positive impact in the lives of underprivileged families in India. We offer a range of programs, including food donation, old clothes donation and unused medicine donation. ",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const Partner = () => {
   return (
     <div className="partner-page">
       <div className="title">
-        <h1>Our Partnered NGO's</h1>
+        <h1>Our Partnered Restaurants</h1>
       </div>
       <div className="partner">
         {data.map((partner) => {
