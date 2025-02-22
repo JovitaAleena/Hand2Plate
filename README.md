@@ -4,7 +4,7 @@
 
 Food Donation is a web application aimed at connecting individuals and organizations willing to donate excess food with those in need. It provides a platform to reduce food wastage and contribute to the well-being of communities.
 
-## Features
+## Features which differentiate us from similar application
 -Gratification to the Donors:Donation Milestones Reward users with badges or points for reaching donation milestones.
 -Employment:Provides Job opportunity for unemployed people
 -Verification System:This app provides a OTP Based verification System
@@ -68,4 +68,27 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your mach
 - The backend server will be running at `http://localhost:3000`.
 - The frontend application will communicate with the backend server for data exchange.
 
-hello
+## Competitor Analysis
+1. No Food Waste
+Overview: An Indian NGO that collects excess food from events and distributes it to the needy. They utilize an app to coordinate food pickups and identify hunger spots.
+Limitations:
+Primarily operates in select regions, limiting its reach.
+Relies heavily on volunteers, which can affect consistency and scalability.
+
+2. ShareTheMeal
+Overview: A global initiative by the United Nations World Food Programme, allowing users to donate funds to provide meals for the hungry.
+Limitations:
+Focuses on monetary donations rather than redistributing surplus food.
+Operates on a global scale, which may not address local food wastage directly.
+
+3. Too Good To Go
+Overview: Connects users with restaurants and stores offering unsold food at discounted prices, aiming to reduce food waste.
+Limitations:
+Emphasizes consumer purchases over charitable donations.
+Predominantly active in Europe and North America, with limited presence in India.
+
+4. OLIO
+Overview: A community-driven app where individuals and businesses share surplus food with neighbors to prevent waste.
+Limitations:
+Depends on individual participation, which can lead to inconsistent food availability.
+Lacks structured collaboration with governmental bodies for large-scale impact.
